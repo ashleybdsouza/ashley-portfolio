@@ -1,0 +1,97 @@
+/* src/App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 1.5rem;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+  color: #f4f4f9;
+}
+
+.section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.about, .projects, .contact {
+  background-color: #e0e4ff;
+  margin: 1rem 0;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* src/App.css */
+
+/* Add this to style the social icons */
+.contact-links {
+  margin-top: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #007bff;
+}
