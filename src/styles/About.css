@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center; /* Center the image container horizontally */
   align-items: center; /* Center the section content vertically */
-  height: 50vh; /* Adjust height as needed */
+  height: 70vh; /* Adjust height as needed */
   padding: 1rem; /* Add padding for spacing */
 }
 

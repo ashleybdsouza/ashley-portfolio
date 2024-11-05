@@ -1,0 +1,38 @@
+/* src/Technologies.css */
+.technologies {
+  padding: 2em;
+  text-align: center;
+}
+
+.technologies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1em;
+  justify-items: center;
+}
+
+.technology-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 1em;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.technology-tile:hover {
+  transform: scale(1.05);
+}
+
+.technology-icon {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.technology-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}

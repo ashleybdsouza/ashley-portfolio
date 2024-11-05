@@ -42,20 +42,20 @@ body {
   text-align: center;
 }
 
-.about, .projects, .contact {
+.about, .projects, .contact, .technologies {
   background-color: #e0e4ff;
   margin: 1rem 0;
   padding: 2rem;
   border-radius: 8px;
 }
 
-.project-list {
+.project-list, .technology-list {
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
 
-.project-card {
+.project-card, .technology-card {
   background-color: #fff;
   padding: 1rem;
   border-radius: 8px;
@@ -63,12 +63,12 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.project-card a {
+.project-card, .technology-card a {
   text-decoration: none;
   color: #007bff;
 }
 
-.project-card a:hover {
+.project-card, .technology-card a:hover {
   text-decoration: underline;
 }
 
