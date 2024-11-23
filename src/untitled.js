@@ -1,6 +1,5 @@
 import React from 'react';
-//import './styles/App.css';
-import './styles/Projects.css';
+import './styles/App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faRocket } from '@fortawesome/free-solid-svg-icons'; // Import faRocket
@@ -53,7 +52,7 @@ function Projects() {
               <a href="https://github.com/ashleybdsouza/tech-journey" class="icon" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faGithub} className="icon" /><span class="tooltip">Source Code</span>
               </a>
-              <a href="https://ashleybdsouza.netlify.app/pages/4-football-standings/" class="icon" target="_blank" rel="noopener noreferrer">
+              <a href="https://ashleybdsouza.netlify.app/pages/3-recipe-finder/" class="icon" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faRocket} className="icon" /><span class="tooltip">Deployed Project</span>
               </a>
             </div>
@@ -68,7 +67,7 @@ function Projects() {
               <a href="https://github.com/ashleybdsouza/tech-journey" class="icon" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faGithub} className="icon" /><span class="tooltip">Source Code</span>
               </a>
-              <a href="https://ashleybdsouza.netlify.app/pages/3-recipe-finder/" class="icon" target="_blank" rel="noopener noreferrer">
+              <a href="https://ashleybdsouza.netlify.app/pages/4-football-standings/" class="icon" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faRocket} className="icon" /><span class="tooltip">Deployed Project</span>
               </a>
             </div>

@@ -26,6 +26,7 @@
 .about-text {
   font-size: 1.2rem; /* Adjust font size as needed */
   color: #333; /* Text color */
+  margin-left: 20px;
 }
 
 @media (min-width: 768px) {
