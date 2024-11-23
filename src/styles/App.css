@@ -55,6 +55,12 @@ body {
   gap: 2rem;
 }
 
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .project-card, .technology-card {
   background-color: #fff;
   padding: 1rem;
@@ -69,10 +75,54 @@ body {
 }
 
 .project-card, .technology-card a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-/* src/App.css */
+.project-card .icon {
+  justify-content: center;
+}
+
+.project-card h3 {
+  color: black; /* Set h3 text color to black */
+}
+
+.project-card p {
+  color: gray; /* Set p text color to gray */
+}
+
+.project-card img {
+  max-width: 100%;
+  max-height: 100px;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.icon .tooltip {
+  display: none;
+  position: absolute;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px; /* Adjust the size as needed */
+  color: gray; /* Or use a specific hex color like #888 */
+  font-style: italic;
+}
+
+.icon:hover .tooltip {
+  display: block;
+}
+
+.icon {
+  position: relative; /* Make the icon a positioning context */
+  display: inline-block; /* Ensure the icon has a width for centering */
+}
+
+.tooltip {
+  display: block; /* or inline-block if you want to control width */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(-55% - 5px); /* Adjust the spacing as needed */
+  white-space: nowrap; /* Prevent the tooltip from wrapping */
+}
 
 /* Add this to style the social icons */
 .contact-links {

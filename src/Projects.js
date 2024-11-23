@@ -2,6 +2,11 @@ import React from 'react';
 import './styles/App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faRocket } from '@fortawesome/free-solid-svg-icons'; // Import faRocket
+import calculator from './public/images/Calculator-img.png'; // Update with your icon’s path
+import groceryList from './public/images/grocery.png'; // Update with your icon’s path
+import footballStandings from './public/images/football-standings.png'; // Update with your icon’s path
+import recipeFinder from './public/images/recipe-finder.png'; // Update with your icon’s path
 
 function Projects() {
   return (
@@ -9,18 +14,64 @@ function Projects() {
       <h2>Projects</h2>
       <div className="project-list">
         <div className="project-card">
-          <h3>Pages Using Eleventy</h3>
-          <p>
-            <a href="https://github.com/ashleybdsouza/tech-journey" target="_blank" rel="noopener noreferrer">Source Code <FontAwesomeIcon icon={faGithub} className="icon" /> </a>
-          </p>
-          <p>
-            <a href="https://ashleybdsouza.netlify.app/pages/portfolio-list/" target="_blank" rel="noopener noreferrer">Deployed Project on Netlify</a>
-          </p>
+          <h3>Javascript Calculator</h3>
+          <img src={calculator} alt="Javascript Calculator" />
+          <p>Simple Calculator Using HTML, CSS, Javascript. </p>
+          <div className="contact-links">
+            <div className="social-icons">
+              <a href="https://github.com/ashleybdsouza/tech-journey" class="icon" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} className="icon" /><span class="tooltip">Source Code</span>
+              </a>
+              <a href="https://ashleybdsouza.netlify.app/pages/1-calculator/" class="icon" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faRocket} className="icon" /><span class="tooltip">Deployed Project</span>
+              </a>
+            </div>
+          </div>
         </div>
         <div className="project-card">
-          <h3>Project 2</h3>
-          <p>A description of your project goes here.</p>
-          <a href="https://github.com/yourprofile/project2" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          <h3>Grocery List</h3>
+          <img src={groceryList} alt="Grocery List" />
+          <p>Grocery List using the concept of To-Do List. </p>
+          <div className="contact-links">
+            <div className="social-icons">
+              <a href="https://github.com/ashleybdsouza/tech-journey" class="icon" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} className="icon" /><span class="tooltip">Source Code</span>
+              </a>
+              <a href="https://ashleybdsouza.netlify.app/pages/2-grocery-list/" class="icon" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faRocket} className="icon" /><span class="tooltip">Deployed Project</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="project-card">
+          <h3>Football Standings</h3>
+          <img src={footballStandings} alt="Football Standings" />
+          <p>Football Standings using APIs, DataTables. </p>
+          <div className="contact-links">
+            <div className="social-icons">
+              <a href="https://github.com/ashleybdsouza/tech-journey" class="icon" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} className="icon" /><span class="tooltip">Source Code</span>
+              </a>
+              <a href="https://ashleybdsouza.netlify.app/pages/3-recipe-finder/" class="icon" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faRocket} className="icon" /><span class="tooltip">View Deployed Project</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="project-card">
+          <h3>Recipe Finder</h3>
+          <img src={recipeFinder} alt="Recipe Finder" />
+          <p>Recipe Finder using APIs, displaying using CSS properties. </p>
+          <div className="contact-links">
+            <div className="social-icons">
+              <a href="https://github.com/ashleybdsouza/tech-journey" class="icon" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} className="icon" /><span class="tooltip">Source Code</span>
+              </a>
+              <a href="https://ashleybdsouza.netlify.app/pages/4-football-standings/" class="icon" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faRocket} className="icon" /><span class="tooltip">View Deployed Project</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
