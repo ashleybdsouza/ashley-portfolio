@@ -19,7 +19,7 @@ const Technologies = () => {
       <h2>Technologies</h2>
       <div className="technologies-grid">
         {technologies.map((tech, index) => (
-            <FontAwesomeIcon icon={tech.icon} style={{ color: tech.color, fontSize: '3rem' }} />
+            <FontAwesomeIcon key={tech.name} icon={tech.icon} style={{ color: tech.color, fontSize: '3rem' }} />
         ))}
       </div>
     </section>
