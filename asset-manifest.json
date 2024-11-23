@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/ashley-portfolio/static/css/main.82c11594.css",
-    "main.js": "/ashley-portfolio/static/js/main.771072b4.js",
+    "main.css": "/ashley-portfolio/static/css/main.bb477237.css",
+    "main.js": "/ashley-portfolio/static/js/main.c939badf.js",
     "static/js/453.6b7be919.chunk.js": "/ashley-portfolio/static/js/453.6b7be919.chunk.js",
     "static/media/grocery.png": "/ashley-portfolio/static/media/grocery.f4dcbf8197a36713b490.png",
     "static/media/Ashley-Portfolio-Favicon.webp": "/ashley-portfolio/static/media/Ashley-Portfolio-Favicon.cbfab745ea1fccf5f0ab.webp",
     "static/media/football-standings.png": "/ashley-portfolio/static/media/football-standings.fd92b203bfd6ce5f0a22.png",
     "static/media/Calculator-img.png": "/ashley-portfolio/static/media/Calculator-img.33037b6d59cf041e1de6.png",
     "index.html": "/ashley-portfolio/index.html",
-    "main.82c11594.css.map": "/ashley-portfolio/static/css/main.82c11594.css.map",
-    "main.771072b4.js.map": "/ashley-portfolio/static/js/main.771072b4.js.map",
+    "main.bb477237.css.map": "/ashley-portfolio/static/css/main.bb477237.css.map",
+    "main.c939badf.js.map": "/ashley-portfolio/static/js/main.c939badf.js.map",
     "453.6b7be919.chunk.js.map": "/ashley-portfolio/static/js/453.6b7be919.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82c11594.css",
-    "static/js/main.771072b4.js"
+    "static/css/main.bb477237.css",
+    "static/js/main.c939badf.js"
   ]
 }
