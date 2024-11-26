@@ -5,6 +5,7 @@ import Technologies from './Technologies';
 import Projects from './Projects';
 import Blog from './Blog';
 import Contact from './Contact';
+import Timeline from './Timeline';
 import './styles/App.css';
 import { useGoogleAnalytics } from './hooks/useGoogleAnalytics';
 
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <main>
         <About />
+        <Timeline />
         <Technologies />
         <Projects />
         <Blog />

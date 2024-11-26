@@ -1,0 +1,190 @@
+.section.timeline {
+  padding: 50px 0;
+}
+
+.timeline-container {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 100px 20px 40px; /* Added horizontal padding */
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #007bff;
+  transform: translateY(-50%);
+}
+
+.timeline-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  min-width: 60px; /* Ensure minimum width for each item */
+}
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.year {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.point {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 3px solid #007bff;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.timeline-item:hover .point,
+.timeline-item.active .point {
+  transform: scale(1.3);
+  background-color: #007bff;
+}
+
+.event-callout {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  width: 250px;
+  max-width: 300px;
+  text-align: center;
+  word-wrap: break-word;
+  white-space: normal;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-callout::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border: 8px solid transparent;
+  border-top-color: #007bff;
+  transform: translateX(-50%);
+}
+
+/* Adjust callout position for first and last items */
+.timeline-item:first-child .event-callout {
+  left: 0;
+  transform: translateX(0);
+}
+
+.timeline-item:first-child .event-callout::after {
+  left: 20px;
+}
+
+.timeline-item:last-child .event-callout {
+  left: auto;
+  right: 0;
+  transform: translateX(0);
+}
+
+.timeline-item:last-child .event-callout::after {
+  left: auto;
+  right: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .timeline-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 100px 0 40px; /* Remove horizontal padding on smaller screens */
+  }
+
+  .timeline {
+    width: max-content;
+    padding: 0 20px; /* Add padding to the timeline instead */
+  }
+
+  .timeline-item {
+    flex: 0 0 auto;
+    margin: 0 20px;
+  }
+}
+
+
+.event-details-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.event-details {
+  width: 50%;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #007bff;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-details h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.event-details p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* Styling the scrollbar for webkit browsers */
+.event-details::-webkit-scrollbar {
+  width: 8px;
+}
+
+.event-details::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.event-details::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.event-details::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .event-details {
+    width: 80%;
+  }
+}
