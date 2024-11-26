@@ -6,8 +6,11 @@ import Projects from './Projects';
 import Blog from './Blog';
 import Contact from './Contact';
 import './styles/App.css';
+import { useGoogleAnalytics } from './hooks/useGoogleAnalytics';
+
 
 function App() {
+  useGoogleAnalytics();
   return (
     <div className="App">
       <Header />

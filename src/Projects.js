@@ -20,11 +20,11 @@ function Projects() {
           <p>Simple Calculator Using HTML, CSS, Javascript. </p>
           <div className="contact-links">
             <div className="social-icons">
-              <a href="https://github.com/ashleybdsouza/tech-journey" class="icon" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} className="icon" /><span class="tooltip">Source Code</span>
+              <a href="https://github.com/ashleybdsouza/tech-journey" className="icon" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} className="icon" /><span className="tooltip">Source Code</span>
               </a>
-              <a href="https://ashleybdsouza.netlify.app/pages/1-calculator/" class="icon" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faRocket} className="icon" /><span class="tooltip">Deployed Project</span>
+              <a href="https://ashleybdsouza.netlify.app/pages/1-calculator/" className="icon" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faRocket} className="icon" /><span className="tooltip">Deployed Project</span>
               </a>
             </div>
           </div>
@@ -35,11 +35,11 @@ function Projects() {
           <p>Grocery List using the concept of To-Do List. </p>
           <div className="contact-links">
             <div className="social-icons">
-              <a href="https://github.com/ashleybdsouza/tech-journey" class="icon" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} className="icon" /><span class="tooltip">Source Code</span>
+              <a href="https://github.com/ashleybdsouza/tech-journey" className="icon" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} className="icon" /><span className="tooltip">Source Code</span>
               </a>
-              <a href="https://ashleybdsouza.netlify.app/pages/2-grocery-list/" class="icon" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faRocket} className="icon" /><span class="tooltip">Deployed Project</span>
+              <a href="https://ashleybdsouza.netlify.app/pages/2-grocery-list/" className="icon" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faRocket} className="icon" /><span className="tooltip">Deployed Project</span>
               </a>
             </div>
           </div>
@@ -50,11 +50,11 @@ function Projects() {
           <p>Football Standings using APIs, DataTables. </p>
           <div className="contact-links">
             <div className="social-icons">
-              <a href="https://github.com/ashleybdsouza/tech-journey" class="icon" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} className="icon" /><span class="tooltip">Source Code</span>
+              <a href="https://github.com/ashleybdsouza/tech-journey" className="icon" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} className="icon" /><span className="tooltip">Source Code</span>
               </a>
-              <a href="https://ashleybdsouza.netlify.app/pages/4-football-standings/" class="icon" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faRocket} className="icon" /><span class="tooltip">Deployed Project</span>
+              <a href="https://ashleybdsouza.netlify.app/pages/4-football-standings/" className="icon" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faRocket} className="icon" /><span className="tooltip">Deployed Project</span>
               </a>
             </div>
           </div>
@@ -65,11 +65,11 @@ function Projects() {
           <p>Recipe Finder using APIs, displaying using CSS properties. </p>
           <div className="contact-links">
             <div className="social-icons">
-              <a href="https://github.com/ashleybdsouza/tech-journey" class="icon" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} className="icon" /><span class="tooltip">Source Code</span>
+              <a href="https://github.com/ashleybdsouza/tech-journey" className="icon" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} className="icon" /><span className="tooltip">Source Code</span>
               </a>
-              <a href="https://ashleybdsouza.netlify.app/pages/3-recipe-finder/" class="icon" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faRocket} className="icon" /><span class="tooltip">Deployed Project</span>
+              <a href="https://ashleybdsouza.netlify.app/pages/3-recipe-finder/" className="icon" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faRocket} className="icon" /><span className="tooltip">Deployed Project</span>
               </a>
             </div>
           </div>

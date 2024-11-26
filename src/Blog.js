@@ -15,7 +15,7 @@ function Blog() {
       <div className="project-list">
         <div className="project-card">
             <h3>Javascript Calculator</h3>
-            <a href="https://ashleybdsouza.netlify.app/posts/1-calculator-explanation/" class="icon" target="_blank" rel="noopener noreferrer">
+            <a href="https://ashleybdsouza.netlify.app/posts/1-calculator-explanation/" className="icon" target="_blank" rel="noopener noreferrer">
               <img src={calculator} alt="Javascript Calculator Explanation" />
               <p>How I built the Javascript calculator Using HTML, CSS, Javascript. </p>
               <div className="contact-links">
@@ -27,7 +27,7 @@ function Blog() {
         </div>
         <div className="project-card">
             <h3>Grocery List</h3>
-            <a href="https://ashleybdsouza.netlify.app/posts/2-grocery-list-explanation/" class="icon" target="_blank" rel="noopener noreferrer">
+            <a href="https://ashleybdsouza.netlify.app/posts/2-grocery-list-explanation/" className="icon" target="_blank" rel="noopener noreferrer">
             <img src={groceryList} alt="Grocery List" />
             <p>How I built the Grocery List. </p>
               <div className="contact-links">
@@ -39,7 +39,7 @@ function Blog() {
         </div>
         <div className="project-card">
             <h3>Football Standings</h3>
-            <a href="https://ashleybdsouza.netlify.app/posts/4-football-standings-explanation/" class="icon" target="_blank" rel="noopener noreferrer">
+            <a href="https://ashleybdsouza.netlify.app/posts/4-football-standings-explanation/" className="icon" target="_blank" rel="noopener noreferrer">
             <img src={footballStandings} alt="Football Standings" />
             <p>How I built the Football Standings Table using APIs, DataTables. </p>
             <div className="contact-links">
@@ -51,7 +51,7 @@ function Blog() {
         </div>
         <div className="project-card">
             <h3>Recipe Finder</h3>
-            <a href="https://ashleybdsouza.netlify.app/posts/3-recipe-finder-explanation/" class="icon" target="_blank" rel="noopener noreferrer">
+            <a href="https://ashleybdsouza.netlify.app/posts/3-recipe-finder-explanation/" className="icon" target="_blank" rel="noopener noreferrer">
             <img src={recipeFinder} alt="Recipe Finder" />
             <p>How I built the Recipe Finder using APIs, displaying using CSS properties. </p>
             <div className="contact-links">
