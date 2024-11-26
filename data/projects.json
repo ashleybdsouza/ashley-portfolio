@@ -1,0 +1,36 @@
+{
+  "projects": [
+    { 
+      "name": "JavaScript calculator", 
+      "image": "%PUBLIC_URL%/images/Calculator-img.png", 
+      "description": "Simple Calculator Using HTML, CSS, Javascript.", 
+      "githubLink": "https://github.com/ashleybdsouza/tech-journey",
+      "deployedLink": "https://ashleybdsouza.netlify.app/pages/1-calculator/",
+      "blogLink" : "https://ashleybdsouza.netlify.app/posts/1-calculator-explanation/"
+    },
+    {
+      "name": "Grocery List",
+      "image": "%PUBLIC_URL%/images/grocery.png",
+      "description": "Grocery List using the concept of To-Do List.",
+      "githubLink": "https://github.com/ashleybdsouza/tech-journey",
+      "deployedLink": "https://ashleybdsouza.netlify.app/pages/2-grocery-list/",
+      "blogLink" : "https://ashleybdsouza.netlify.app/posts/2-grocery-list-explanation/"
+    },
+    {
+      "name": "Football Standings",
+      "image": "%PUBLIC_URL%/images/football-standings.png",
+      "description": "Football Standings using APIs, DataTables.",
+      "githubLink": "https://github.com/ashleybdsouza/tech-journey",
+      "deployedLink": "https://ashleybdsouza.netlify.app/pages/4-football-standings/",
+      "blogLink" : "https://ashleybdsouza.netlify.app/posts/4-football-standings-explanation/"
+    },
+    {
+      "name": "Recipe Finder",
+      "image": "%PUBLIC_URL%/images/recipe-finder.png",
+      "description": "Recipe Finder using APIs, displaying using CSS properties.",
+      "githubLink": "https://github.com/ashleybdsouza/tech-journey",
+      "deployedLink": "https://ashleybdsouza.netlify.app/pages/3-recipe-finder/",
+      "blogLink" : "https://ashleybdsouza.netlify.app/posts/3-recipe-finder-explanation/"
+    }
+  ]
+}
