@@ -78,3 +78,8 @@
   bottom: calc(-55% - 5px); /* Adjust the spacing as needed */
   white-space: nowrap; /* Prevent the tooltip from wrapping */
 }
+
+a.icon:hover {
+  transform: scale(1.10); /* Adjust the scale value as needed */
+  transition: transform 0.3s ease-in-out; /* Adjust the duration and easing function as needed */
+}
