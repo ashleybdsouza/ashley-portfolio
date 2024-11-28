@@ -185,6 +185,25 @@
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .event-details {
-    width: 80%;
+    width: 50%;
+  }
+}
+
+.events-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .events-wrapper {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 768px) {
+  section .timeline { /* Replace with the actual parent selector */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

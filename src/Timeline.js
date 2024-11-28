@@ -42,10 +42,12 @@ const Timeline = () => {
         </div>
       </div>
       {selectedItem && (
-        <div className="event-details-container">
-          <div className="event-details">
-            <h3>{timelineData.find(item => item.id === selectedItem)?.event}</h3>
-            <p>{timelineData.find(item => item.id === selectedItem)?.details}</p>
+        <div class="events-wrapper">
+          <div className="event-details-container">
+            <div className="event-details">
+              <h3>{timelineData.find(item => item.id === selectedItem)?.event}</h3>
+              <p>{timelineData.find(item => item.id === selectedItem)?.details}</p>
+            </div>
           </div>
         </div>
       )}
