@@ -31,6 +31,14 @@
       "githubLink": "https://github.com/ashleybdsouza/tech-journey",
       "deployedLink": "https://ashleybdsouza.netlify.app/pages/3-recipe-finder/",
       "blogLink" : "https://ashleybdsouza.netlify.app/posts/3-recipe-finder-explanation/"
+    },
+    {
+      "name": "Weather App",
+      "image": "%PUBLIC_URL%/images/weather-logo.png",
+      "description": "Recipe Finder using APIs, displaying using CSS properties.",
+      "githubLink": "https://github.com/ashleybdsouza/weather-app",
+      "deployedLink": "https://ashleybdsouza.github.io/weather-app/",
+      "blogLink" : "https://ashleybdsouza.netlify.app/posts/5-weather-app-explanation/"
     }
   ]
 }

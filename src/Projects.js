@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './styles/Projects.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -27,7 +28,7 @@ function Projects() {
     <section id="projects" className="section projects">
       <h2>Projects</h2>
       <div className="project-list">
-        {projects.map((project, index) => (
+        {projects.slice(0, 4).map((project, index) => (
           <div className="project-card" key={index}>
             <h3>{project.name}</h3>
             <img src={project.image} alt={project.name} />
@@ -44,6 +45,12 @@ function Projects() {
             </div>
           </div>
         ))}
+        <Link to="/project-list" className="view-more-btn">
+          <div className="project-card">
+            <h3>View More</h3>
+            <p>View More Projects</p>
+          </div>
+        </Link>
       </div>
     </section>
   );

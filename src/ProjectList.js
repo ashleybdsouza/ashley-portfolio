@@ -1,43 +1,62 @@
-// src/ProjectList.js
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import './styles/ProjectList.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faRocket } from '@fortawesome/free-solid-svg-icons';
 
-const projectsByTech = {
-  javascript: [
-    { name: 'JavaScript Project 1', description: 'Description for project 1' },
-    // Add more projects for JavaScript
-  ],
-  reactjs: [
-    { name: 'ReactJS Project 1', description: 'Description for project 1' },
-    // Add more projects for ReactJS
-  ],
-  css3: [
-    { name: 'CSS3 Project 1', description: 'Description for project 1' },
-    // Add more projects for CSS3
-  ],
-  html5: [
-    { name: 'HTML5 Project 1', description: 'Description for project 1' },
-    // Add more projects for HTML5
-  ],
-};
+function ProjectList() {
+  const [projects, setProjects] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
 
-const ProjectList = () => {
-  const { tech } = useParams();
-  const projects = projectsByTech[tech.toLowerCase()] || [];
+  useEffect(() => {
+    fetch(`${process.env.PUBLIC_URL}/data/projects.json`)
+      .then(response => response.json())
+      .then(data => {
+        const processedProjects = data.projects.map(project => ({
+          ...project,
+          image: project.image.replace('%PUBLIC_URL%', process.env.PUBLIC_URL)
+        }));
+        setProjects(processedProjects);
+      })
+      .catch(error => {
+        console.error('Error loading projects:', error);
+      });
+  }, []);
+
+  const filteredProjects = projects.filter(project =>
+    project.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    project.description.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
-    <section>
-      <h2>Projects for {tech}</h2>
-      <ul>
-        {projects.map((project, index) => (
-          <li key={index}>
+    <div className="project-list-page">
+      <h1>All Projects</h1>
+      <input
+        type="text"
+        placeholder="Search projects..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        className="search-box"
+      />
+      <div className="project-grid">
+        {filteredProjects.map((project, index) => (
+          <div className="project-card" key={index}>
             <h3>{project.name}</h3>
+            <img src={project.image} alt={project.name} />
             <p>{project.description}</p>
-          </li>
+            <div className="project-links">
+              <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} /> Source
+              </a>
+              <a href={project.deployedLink} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faRocket} /> Demo
+              </a>
+            </div>
+          </div>
         ))}
-      </ul>
-    </section>
+      </div>
+    </div>
   );
-};
+}
 
 export default ProjectList;
