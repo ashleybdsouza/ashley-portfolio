@@ -44,7 +44,7 @@
       "name": "Movie Search App",
       "image": "%PUBLIC_URL%/images/movie-search.png",
       "description": "Search for movies using the OMDB API and React.",
-      "githubLink": "https://github.com/ashleybdsouza/ashley-portfolio/src/movie-search",
+      "githubLink": "https://github.com/ashleybdsouza/ashley-portfolio/tree/f2775bc71b8293d0b7393b0098f8adc490385206/src/movie-search",
       "deployedLink": "/movie-search",
       "blogLink": ""
     }

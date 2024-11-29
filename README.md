@@ -13,3 +13,5 @@ Football Standings - [Source Code](https://github.com/ashleybdsouza/tech-journey
 Recipe Finder - [Source Code](https://github.com/ashleybdsouza/tech-journey) | [Deployed Project](https://ashleybdsouza.netlify.app/pages/3-recipe-finder/) 
 
 Weather App - [Source Code](https://github.com/ashleybdsouza/weather-app) | [Deployed Project](https://ashleybdsouza.github.io/weather-app/)
+
+Movie Search App - [Source Code](https://github.com/ashleybdsouza/ashley-portfolio/tree/f2775bc71b8293d0b7393b0098f8adc490385206/src/movie-search) | [Deployed Project](https://ashleybdsouza.github.io/movie-search/)
