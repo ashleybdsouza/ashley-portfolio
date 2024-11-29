@@ -8,6 +8,7 @@ import ProjectList from './ProjectList';
 import Blog from './Blog';
 import Contact from './Contact';
 import Timeline from './Timeline';
+import MovieSearch from './movie-search/MovieSearch';
 import './styles/App.css';
 import { useGoogleAnalytics } from './hooks/useGoogleAnalytics';
 
@@ -31,6 +32,7 @@ function App() {
               </>
             } />
             <Route path="/project-list" element={<ProjectList />} />
+            <Route path="/movie-search" element={<MovieSearch />} />
           </Routes>
         </main>
       </div>

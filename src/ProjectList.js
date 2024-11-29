@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './styles/ProjectList.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -48,9 +49,15 @@ function ProjectList() {
               <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faGithub} /> Source
               </a>
-              <a href={project.deployedLink} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faRocket} /> Demo
-              </a>
+              {project.deployedLink.startsWith('/') ? (
+                <Link to={project.deployedLink}>
+                  <FontAwesomeIcon icon={faRocket} /> Demo
+                </Link>
+              ) : (
+                <a href={project.deployedLink} target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faRocket} /> Demo
+                </a>
+              )}
             </div>
           </div>
         ))}

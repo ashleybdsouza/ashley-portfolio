@@ -48,6 +48,7 @@ function Projects() {
         <Link to="/project-list" className="view-more-btn">
           <div className="project-card">
             <h3>View More</h3>
+            <img src={`${process.env.PUBLIC_URL}/images/see-more.png`} alt="View More" />
             <p>View More Projects</p>
           </div>
         </Link>
