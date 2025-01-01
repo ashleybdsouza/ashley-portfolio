@@ -23,7 +23,7 @@ function Blog() {
       });
   }, []);
   return (
-    <section id="projects" className="section projects">
+    <section id="front-end-blog" className="section projects">
       <h2>Blog</h2>
       <div className="project-list">
         {projects.map((project, index) => (

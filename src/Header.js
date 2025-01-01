@@ -38,6 +38,11 @@ function Header() {
             </Link>
           </li>
           <li>
+            <a href="https://ashleybdsouza.github.io/tpm-blog" target="_blank" rel="noopener noreferrer">
+              TPM Blog
+            </a>
+          </li>
+          <li>
             <Link to="/#contact" onClick={() => scrollToSection('contact')}>
               Contact
             </Link>
