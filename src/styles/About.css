@@ -47,9 +47,17 @@
 @media (max-width: 768px) { /* Adjust breakpoint as needed */
   section#about {
     flex-direction: column;
+    margin-top: 10rem; /* Add top margin for mobile */
   }
+
   section#about .about-text,
   section#about .about-image {
     width: 100%;
+  }
+
+  .about-image img {
+    width: 200px; /* Reduce image size on mobile */
+    height: 200px;
+    margin-bottom: 0.5rem;
   }
 }

@@ -6,6 +6,7 @@ body {
   padding: 0;
   background-color: #f4f4f9;
   color: #333;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .header {
@@ -15,7 +16,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative; /* Establish a positioning context */
+  z-index: 10; /* Ensure header is above other content */
 }
+
+main {
+  position: relative; /* Add relative positioning to the main content */
+  z-index: 1; /* Ensure main content is above the background but below the header */
+  padding-top: 2rem;
+}
+
+/* Header Styles */
 
 .header .logo {
   font-size: 1.5rem;
@@ -41,6 +52,71 @@ body {
 
 .header nav ul li a:hover {
   color: #f4f4f9;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block; /* Hide by default on larger screens */
+  padding: 0; /* Remove default padding */
+}
+
+.hamburger-menu .svg-inline--fa { /* Targeting the Font Awesome icon */
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* Mobile Menu Styles */
+.nav-links {
+  position: absolute;
+  top: 100%; /* Position below the header */
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  transform: translateX(-100%); /* Initially hidden off-screen to the left */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition */
+}
+
+.nav-links.show {
+  transform: translateX(0); /* Slide in from the left when active */
+  z-index: 10;
+}
+
+.nav-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%; /* Ensure ul takes full width */
+}
+
+.nav-links li {
+  text-align: center;
+  width: 100%; /* Ensure li takes full width */
+}
+
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+  .header nav {
+    display: none; /* Hide the default navigation on mobile */
+  }
+
+  .hamburger-menu {
+    display: block; /* Show the hamburger menu on mobile */
+    margin-left: auto; /* Align the hamburger menu to the right */
+  }
+
+  .header .nav-links.show {
+    display: flex;
+  }
 }
 
 .section {
@@ -150,4 +226,22 @@ body {
 
 .icon:hover {
   color: #007bff;
+}
+
+@media (max-width: 768px) { /* Mobile styles */
+  .header {
+    padding: 0.5rem; /* Reduce padding on smaller screens */
+  }
+
+  main {
+    padding-top: 1rem; /* Add padding-top to main content on mobile */
+  }
+
+  .about-section {
+    margin-top: 1rem; /* Add some space between the header and About section on mobile */
+  }
+
+  .timeline-container {
+    margin-top: 2rem; /* Add space between About and Timeline */
+  }
 }

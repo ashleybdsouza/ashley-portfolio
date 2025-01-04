@@ -207,3 +207,9 @@
     align-items: flex-start;
   }
 }
+
+@media (max-width: 768px) {
+  .timeline-container {
+    margin-top: 3rem; /* Add top margin on mobile */
+  }
+}

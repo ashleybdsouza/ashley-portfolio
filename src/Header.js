@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './styles/App.css';
 
 function Header() {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId) => {
     if (isHomePage) {
@@ -14,13 +17,23 @@ function Header() {
       }
     }
   };
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
     <header className="header">
       <h1 className="logo">
-        <Link to="/">Ashley Dsouza</Link>
+        <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Ashley Dsouza</Link>
       </h1>
-      <nav>
+
+      {/* Hamburger Menu Icon - Always visible */}
+      <button className="hamburger-menu" onClick={toggleMobileMenu}>
+        <FontAwesomeIcon icon={faBars} size="lg" />
+      </button>
+
+      {/* Navigation Links - Now always in the overlay */}
+      <nav className={`nav-links ${isMobileMenuOpen ? 'show' : ''}`}>
         <ul>
           <li>
             <Link to="/#about" onClick={() => scrollToSection('about')}>
