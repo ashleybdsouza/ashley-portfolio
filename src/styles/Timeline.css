@@ -1,11 +1,19 @@
+/* Timeline.css */
+
 .section.timeline {
-  padding: 50px 0;
+  padding: 30px 0;
+  overflow: hidden; /* Prevent horizontal scroll due to margin */
+}
+
+.section.timeline h2 {
+  text-align: center; /* Center the h2 */
+  margin-bottom: 30px; /* Add some space between h2 and the timeline */
 }
 
 .timeline-container {
   width: 100%;
-  overflow-x: hidden;
-  padding: 100px 20px 40px; /* Added horizontal padding */
+  padding: 0px 20px 40px; /* Adjusted padding */
+  margin-top: 30px; /* Add some space between h2 and the timeline */
 }
 
 .timeline {
@@ -116,26 +124,6 @@
   right: 20px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-  .timeline-container {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    padding: 100px 0 40px; /* Remove horizontal padding on smaller screens */
-  }
-
-  .timeline {
-    width: max-content;
-    padding: 0 20px; /* Add padding to the timeline instead */
-  }
-
-  .timeline-item {
-    flex: 0 0 auto;
-    margin: 0 20px;
-  }
-}
-
-
 .event-details-container {
   width: 100%;
   display: flex;
@@ -144,7 +132,6 @@
 }
 
 .event-details {
-  width: 50%;
   max-height: 200px;
   overflow-y: auto;
   border: 1px solid #007bff;
@@ -182,34 +169,113 @@
   background: #555;
 }
 
+section#timeline {
+  display: flex; /* Already set */
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center horizontally */
+}
+
+section#timeline h2 {
+  display: flex;
+  justify-content: center; /* Center text within the h2 */
+  width: 100%; /* Or align-self: stretch */
+  margin: 0; /* Remove default margins */
+}
+
+
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
+  .event-details-container {
+    justify-content: flex-start;
+  }
+
   .event-details {
-    width: 50%;
+    width: 100%; /* Occupy full width within the container */
+  }
+  
+  .events-wrapper {
+    margin-top: 2rem;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    width: 100%;
+    margin-left: auto;
+    padding: 0 20px;
+  }
+
+  .event-callout {
+    position: absolute;
+    width: auto;
+    margin: 00px 0 0 00px;
+    transform: none;
+  }
+
+  .event-callout::after {
+    display: none;
+  }
+
+  .timeline-container {
+    margin-top: 2rem; /* Reset top margin on mobile */
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section.timeline {
+    padding: 50px 0 0; /* Remove padding-bottom on mobile */
+  }
+
+  .section.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5rem;
+  }
+
+  .timeline {
+    flex-direction:column;
+    align-items: flex-start;
+    width:100%;
+    padding-left: 30px;
+  }
+
+  .timeline-line {
+    height: 100%;
+    width: 2px;
+    top: 0;
+    left: 30px;
+    bottom: 0;
+    transform: none;
+  }
+
+  .timeline-item {
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .timeline-item .point {
+    position: absolute;
+    left: 30px; /* Align with the vertical timeline */
+    top: 50%; /* Vertically center the point */
+    transform: translateY(-50%); /* Adjust for point's height */
+    z-index: 2; /* Ensure point is above the line */
+  }
+
+  .timeline-content {
+    margin-left: 20px; /* Add margin to the left of content */
+  }
+
+  .timeline-item .year {
+    margin-top: 0; /* Remove top margin */
+    margin-left: 50px; /* Align with timeline content */
+  }
+
+  .timeline-item:first-child{
+    margin-top: 30px;
   }
 }
 
 .events-wrapper {
   display: flex;
   flex-direction: column;
-}
-
-@media (max-width: 768px) {
-  .events-wrapper {
-    flex-direction: column-reverse;
-  }
-}
-
-@media (max-width: 768px) {
-  section .timeline { /* Replace with the actual parent selector */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-@media (max-width: 768px) {
-  .timeline-container {
-    margin-top: 3rem; /* Add top margin on mobile */
-  }
 }
